@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <style>
+          body {
+              padding-top: 50px;
+              padding-bottom: 20px;
+          }
+      </style>
+      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/main.css">
+
+      <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
+  </head>
+  <body>
+      <!--[if lt IE 8]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"></nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-lg-2">
+          <nav class="navbar navbar-default navbar-fixed-side">
+            <ul class="nav navbar-nav" id="catlist">
+              <a class="navbar-brand" href="#">Cat Clicker</a>
+            </ul>
+          </nav>
+          <button class="btn btn-warning" id="btn-admin">
+            Admin
+          </button>
+          <form class="form" id="form-admin">
+            <hr />
+            <label class="input-label">Name</label>
+            <input class="form-control input-sm" id="form-catname" type=text></input><br />
+            <label class="input-label">Clicks Num</label>
+            <input class="form-control input-sm" id="form-catclicks" type=text></input><br />
+            <button class="btn btn-default input-sm" id="btn-admin-cancel">Cancel</button>
+            <button class="btn btn-success input-sm" id="btn-admin-save">Save</button>
+          </form>
+        </div>
+        <div class="col-sm-9 col-lg-10">
+          <div class="text-center">
+            <h2 id="catname"></h2>
+            <img src="" id="catimage" alt="cat"></img>
+            <br /><br />
+            <p>Click count</p>
+            <h2 id="catcount"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
